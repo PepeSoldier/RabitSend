@@ -22,6 +22,7 @@ namespace RabitSend
 
                     channel.BasicPublish(exchange: "", routingKey: "test-queue", basicProperties: null, body: body);
                     Console.WriteLine(" [x] Sent {0}", message);
+                    Console.WriteLine("2PAck changes");
                 }
 
                 Console.WriteLine(" Press [enter] to exit.");
